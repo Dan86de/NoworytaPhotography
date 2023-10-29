@@ -7,9 +7,6 @@ import { Photos } from "./photos";
 import { SectionWrapper } from "./section";
 import { InstagramIcon, LinkedInIcon } from "./social-icons";
 
-import avatars from "@/images/hero_avatar.webp";
-import Image from "next/image";
-
 const blocks = [
 	[1, 1],
 	[2, 4],
