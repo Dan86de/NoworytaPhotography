@@ -72,7 +72,7 @@ module.exports = {
 				"accordion-up": "accordion-up 0.2s ease-out",
 			},
 			fontFamily: {
-				sans: ["--font-montserrat", ...defaultTheme.fontFamily.sans],
+				sans: ["serenity", ...defaultTheme.fontFamily.sans],
 				headings: ["ff-market-web"],
 			},
 		},
