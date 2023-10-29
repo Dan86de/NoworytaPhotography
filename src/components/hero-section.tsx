@@ -36,7 +36,7 @@ export const HeroSection = () => {
 					/>
 				))}
 			</GridPattern>
-			<div className="flex h-full flex-col items-center justify-center pt-20 md:items-center">
+			<div className="flex h-full flex-col items-center justify-center pt-12 md:items-center xl:pt-40">
 				<SectionWrapper>
 					{/* <div className="relative h-24 w-24 overflow-hidden rounded-full">
 						<Image
@@ -49,12 +49,14 @@ export const HeroSection = () => {
 						<h1 className="text-2xl font-bold tracking-tight text-primary sm:text-5xl md:text-4xl">
 							Hallo, mein Name ist Kascha
 						</h1>
-						<p className="pt-4 text-zinc-950">
+						<p className="pt-4 text-zinc-950 md:text-lg lg:text-xl">
 							Ich bin Architekturfotografin. Jeder Innenraum hat seine Einzigartigkeit, die ich
 							durch meine Kamera festhalte und erzähle.
 						</p>
 						<br />
-						<p>In meiner Arbeit bemühe ich mich, jedes Detail zu beachten, weil:</p>
+						<p className="md:text-lg lg:text-xl">
+							In meiner Arbeit bemühe ich mich, jedes Detail zu beachten, weil:
+						</p>
 						<strong className="font-headings block pt-4 text-center text-2xl text-primary underline xl:text-left">
 							{`"der Teufel steckt im Detail"`}
 						</strong>

@@ -10,7 +10,7 @@ export const Header = () => {
 				<div>
 					<Link
 						href={"/"}
-						className="focus:ring-0.5 flex h-20 w-20 items-center justify-center rounded-md bg-transparent outline-none ring-foreground ring-offset-1 transition-all focus:ring-primary focus-visible:outline-primary"
+						className="focus:ring-0.5 flex h-12 w-12 items-center justify-center rounded-md bg-transparent outline-none ring-foreground ring-offset-1 transition-all focus:ring-primary focus-visible:outline-primary md:h-16 md:w-16 lg:h-20 lg:w-20"
 					>
 						<BrandLogo />
 					</Link>

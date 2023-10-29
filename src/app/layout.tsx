@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Header } from "@/components/header";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 export const metadata: Metadata = {
 	title: "Noworytaphotography - portfolio",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className="h-full">
 				<Header />
 				{children}
+				<TailwindIndicator />
 			</body>
 		</html>
 	);
