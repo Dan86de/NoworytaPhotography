@@ -64,4 +64,14 @@ function Block({ row = 0, column = 0, className }: BlockProps) {
 	);
 }
 
+export function generateGridPattern(rows: number, fieldsPerRow: number, maxNumber: number) {
+	const result: number[][] = [];
+	for (let i = 1; i <= rows; i++) {
+		for (let j = 0; j < fieldsPerRow; j++) {
+			result.push([i, Math.floor(Math.random() * (maxNumber + 1))]);
+		}
+	}
+	return result;
+}
+
 export const GridPattern = Object.assign(Grid, { Block });

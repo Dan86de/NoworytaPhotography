@@ -52,8 +52,8 @@ export const ReferencesSection = () => {
 					<div className="flex w-max animate-marquee [--duration:30s] hover:[animation-play-state:paused]">
 						{[...items, ...items].map((item, index) => (
 							<div key={index} className="h-full px-2.5">
-								<div className="border-primary/15 relative h-full w-[24rem] rounded-2xl border bg-background/5 px-8 py-6">
-									<div className="pb-4 font-light text-primary">{item.body}</div>
+								<div className="border-primary/15 flex h-full w-[24rem] flex-col justify-between rounded-2xl border bg-background/5 px-8 py-6">
+									<div className="pb-4 text-xl font-light text-primary">{item.body}</div>
 
 									<div className="mt-auto flex items-center gap-4">
 										<div className="relative h-10 w-10 overflow-hidden rounded-full">
@@ -67,7 +67,9 @@ export const ReferencesSection = () => {
 										</div>
 
 										<div className="flex flex-col text-sm">
-											<div className="text-primary">{item.name}</div>
+											<div className="text-lg font-semibold tracking-wider text-primary">
+												{item.name}
+											</div>
 
 											<div className="text-primary/75">{item.title}</div>
 										</div>

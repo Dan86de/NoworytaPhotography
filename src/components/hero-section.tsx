@@ -2,20 +2,10 @@
 
 import Link from "next/link";
 
-import { GridPattern } from "./grid-pattern";
+import { GridPattern, generateGridPattern } from "./grid-pattern";
 import { Photos } from "./photos";
 import { SectionWrapper } from "./section";
 import { InstagramIcon, LinkedInIcon } from "./social-icons";
-
-function generateGridPattern(rows: number, fieldsPerRow: number, maxNumber: number) {
-	const result: number[][] = [];
-	for (let i = 1; i <= rows; i++) {
-		for (let j = 0; j < fieldsPerRow; j++) {
-			result.push([i, Math.floor(Math.random() * (maxNumber + 1))]);
-		}
-	}
-	return result;
-}
 
 const blocks = generateGridPattern(40, 10, 80);
 
@@ -59,7 +49,7 @@ export const HeroSection = () => {
 						<p className="md:text-lg lg:text-xl">
 							In meiner Arbeit bemühe ich mich, jedes Detail zu beachten, weil:
 						</p>
-						<strong className="font-headings block pt-4 text-center text-2xl text-primary underline xl:pt-2 xl:text-left xl:text-3xl">
+						<strong className="block pt-4 text-center font-headings text-2xl text-primary underline xl:pt-2 xl:text-left xl:text-3xl">
 							{`"der Teufel steckt im Detail"`}
 						</strong>
 					</div>
