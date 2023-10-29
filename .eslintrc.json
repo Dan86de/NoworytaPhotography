@@ -1,3 +1,157 @@
 {
-  "extends": "next/core-web-vitals"
+	"$schema": "https://json.schemastore.org/eslintrc.json",
+	"plugins": ["@typescript-eslint", "import"],
+	"parserOptions": {
+		"project": "tsconfig.json"
+	},
+	"extends": [
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		"plugin:import/recommended",
+		"plugin:import/typescript",
+		"prettier",
+		"next/core-web-vitals"
+	],
+	"rules": {
+		"sort-imports": ["error",{
+			"ignoreCase": false,
+			"ignoreDeclarationSort": true, // don"t want to sort import lines, use eslint-plugin-import instead
+			"ignoreMemberSort": true,
+			"memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+			"allowSeparatedGroups": true
+		}],
+
+		// turn on errors for missing imports
+		"import/no-unresolved": "error",
+
+		// sort imports
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"builtin", // Built-in imports (come from NodeJS native) go first
+					"external", // <- External imports
+					"internal", // <- Absolute imports
+					["sibling", "parent"], // <- Relative imports, the sibling and parent types they can be mingled together
+					"index", // <- index imports
+					"unknown" // <- unknown
+				],
+				"newlines-between": "always",
+				"alphabetize": {
+					/* sort in ascending order. Options: ["ignore", "asc", "desc"] */
+					"order": "asc",
+					/* ignore case. Options: [true, false] */
+					"caseInsensitive": true
+				}
+			}],
+
+		// no let exports
+		"import/no-mutable-exports": "error",
+
+		"import/no-cycle": "error",
+		"import/no-default-export": "error",
+
+		// allow {} even though it"s unsafe but comes handy
+		"@typescript-eslint/ban-types": [
+			"error",
+			{
+				"types": {
+					"{}": false
+				}
+			}
+		],
+
+		"@typescript-eslint/consistent-type-imports": [
+			"error",
+			{
+				"prefer": "type-imports",
+				"fixStyle": "inline-type-imports",
+				"disallowTypeAnnotations": false
+			}
+		],
+
+		"import/no-duplicates": ["error", { "prefer-inline": true }],
+
+		"no-restricted-imports": [
+			"error",
+			{
+				"name": "next/router",
+				"message": "please use next/navigation instead"
+			}
+		],
+
+		"@typescript-eslint/no-misused-promises": "warn",
+
+		// false negatives
+		"import/namespace": ["off"],
+
+		// we allow empty interfaces
+		"no-empty-pattern": "off",
+		"@typescript-eslint/no-empty-interface": "off",
+
+		// we allow empty functions
+		"@typescript-eslint/no-empty-function": "off",
+
+		// we sometimes use async functions that don"t await anything
+		"@typescript-eslint/require-await": "off",
+
+		// make sure to `await` inside try…catch
+		"@typescript-eslint/return-await": ["error", "in-try-catch"],
+
+		// allow unused vars prefixed with `_`
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_"
+			}
+		],
+
+		// numbers and booleans are fine in template strings
+		"@typescript-eslint/restrict-template-expressions": [
+			"error",
+			{ "allowNumber": true, "allowBoolean": true }
+		]
+	},
+	"overrides": [
+		{
+			"files": ["src/app/**/*.ts?(x)"],
+			"rules": {
+				"import/no-default-export": "off"
+			}
+		}
+	],
+	"ignorePatterns": ["*.js", "*.jsx", "/src/gql/*.ts"],
+	"settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true, // always try to resolve types under `<root>@types` directory even it doesn"t contain any source code, like `@types/unist`
+
+        // Choose from one of the "project" configs below or omit to use <root>/tsconfig.json by default
+
+        // use <root>/path/to/folder/tsconfig.json
+        "project": "./tsconfig.json",
+
+        // Multiple tsconfigs (Useful for monorepos)
+
+        // use a glob pattern
+        "project": "packages/*/tsconfig.json",
+
+        // use an array
+        "project": [
+          "packages/module-a/tsconfig.json",
+          "packages/module-b/tsconfig.json"
+        ],
+
+        // use an array of glob patterns
+        "project": [
+          "packages/*/tsconfig.json",
+          "other-packages/*/tsconfig.json"
+        ]
+      }
+    }
+  }
 }

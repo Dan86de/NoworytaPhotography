@@ -1,4 +1,21 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const withMDX = require("@next/mdx")();
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "dsc.cloud",
+        port: "",
+        pathname: "/88160a/**",
+      },
+    ],
+  },
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  experimental: {
+    typedRoutes: true,
+  },
+};
+
+module.exports = withMDX(nextConfig);
