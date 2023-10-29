@@ -7,15 +7,17 @@ import { Photos } from "./photos";
 import { SectionWrapper } from "./section";
 import { InstagramIcon, LinkedInIcon } from "./social-icons";
 
-const blocks = [
-	[1, 1],
-	[2, 4],
-	[3, 2],
-	[3, 7],
-	[4, 5],
-	[5, 0],
-	[5, 6],
-];
+function generateGridPattern(rows: number, fieldsPerRow: number, maxNumber: number) {
+	const result: number[][] = [];
+	for (let i = 1; i <= rows; i++) {
+		for (let j = 0; j < fieldsPerRow; j++) {
+			result.push([i, Math.floor(Math.random() * (maxNumber + 1))]);
+		}
+	}
+	return result;
+}
+
+const blocks = generateGridPattern(40, 10, 80);
 
 export const HeroSection = () => {
 	return (
@@ -46,7 +48,7 @@ export const HeroSection = () => {
 						/>
 					</div> */}
 					<div className="max-w-2xl">
-						<h1 className="text-2xl font-bold tracking-tight text-primary sm:text-5xl md:text-4xl">
+						<h1 className="text-3xl font-bold tracking-tight text-primary sm:text-5xl md:text-4xl lg:text-5xl">
 							Hallo, mein Name ist Kascha
 						</h1>
 						<p className="pt-4 text-zinc-950 md:text-lg lg:text-xl">
@@ -57,7 +59,7 @@ export const HeroSection = () => {
 						<p className="md:text-lg lg:text-xl">
 							In meiner Arbeit bemühe ich mich, jedes Detail zu beachten, weil:
 						</p>
-						<strong className="font-headings block pt-4 text-center text-2xl text-primary underline xl:text-left">
+						<strong className="font-headings block pt-4 text-center text-2xl text-primary underline xl:pt-2 xl:text-left xl:text-3xl">
 							{`"der Teufel steckt im Detail"`}
 						</strong>
 					</div>
