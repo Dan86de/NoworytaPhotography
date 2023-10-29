@@ -44,10 +44,10 @@ const items = [
 export const ReferencesSection = () => {
 	return (
 		<>
-			<SectionWrapperRounded className="w-full">
+			<SectionWrapperRounded>
 				<SectionTitle>{"Referenzen"}</SectionTitle>
 			</SectionWrapperRounded>
-			<div className="relative flex w-screen items-center">
+			<div className="relative flex  items-center">
 				<div className="max-w-screen relative flex overflow-hidden pb-16">
 					<div className="flex w-max animate-marquee [--duration:30s] hover:[animation-play-state:paused]">
 						{[...items, ...items].map((item, index) => (
