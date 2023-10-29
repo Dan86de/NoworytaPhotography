@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className="h-full">
 				<Header />
 				{children}
+				<Footer />
 				<TailwindIndicator />
 			</body>
 		</html>
