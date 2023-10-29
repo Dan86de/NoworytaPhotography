@@ -18,21 +18,21 @@ export type ILink = {
 
 export const links: ILink[] = [
 	{
-		title: "Home",
+		title: "Referenzen",
 		url: { pathname: "/" },
 	},
-	{
-		title: "Über mich",
-		url: { pathname: "/about" },
-	},
-	{
-		title: "Portfolio",
-		url: { pathname: "/portfolio" },
-	},
-	{
-		title: "Kontakt",
-		url: { pathname: "/contact" },
-	},
+	// {
+	// 	title: "Über mich",
+	// 	url: { pathname: "/about" },
+	// },
+	// {
+	// 	title: "Portfolio",
+	// 	url: { pathname: "/portfolio" },
+	// },
+	// {
+	// 	title: "Kontakt",
+	// 	url: { pathname: "/contact" },
+	// },
 ];
 
 export const Header = () => {

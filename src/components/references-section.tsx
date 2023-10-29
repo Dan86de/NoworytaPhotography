@@ -48,12 +48,12 @@ export const ReferencesSection = () => {
 				<SectionTitle>{"Referenzen"}</SectionTitle>
 			</SectionWrapperRounded>
 			<div className="relative flex w-screen items-center">
-				<div className="relative flex max-w-[100vw] overflow-hidden py-5">
+				<div className="max-w-screen relative flex overflow-hidden pb-16">
 					<div className="flex w-max animate-marquee [--duration:30s] hover:[animation-play-state:paused]">
 						{[...items, ...items].map((item, index) => (
 							<div key={index} className="h-full px-2.5">
 								<div className="border-primary/15 relative h-full w-[24rem] rounded-2xl border bg-background/5 px-8 py-6">
-									<div className="pb-4 font-light text-primary/75">{item.body}</div>
+									<div className="pb-4 font-light text-primary">{item.body}</div>
 
 									<div className="mt-auto flex items-center gap-4">
 										<div className="relative h-10 w-10 overflow-hidden rounded-full">
