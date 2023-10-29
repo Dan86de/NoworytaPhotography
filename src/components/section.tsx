@@ -23,7 +23,7 @@ interface SectionWrapperRounded {
 export function SectionWrapperRounded({ children, className }: SectionWrapperRounded) {
 	return (
 		<div className={cn("py-8 lg:py-16", className)}>
-			<div className="bg-background/2.5 relative py-16 md:rounded-3xl lg:rounded-[3rem] xl:py-32">
+			<div className="bg-background/2.5 relative py-8 md:rounded-3xl lg:rounded-[3rem] xl:py-16">
 				<div className="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-foreground/30 to-transparent"></div>
 
 				<div className="absolute left-1/2 top-0 flex -translate-x-1/2 -translate-y-1/2 gap-2 rounded-full bg-background p-1.5">
@@ -43,5 +43,24 @@ export function SectionWrapperRounded({ children, className }: SectionWrapperRou
 				<SectionWrapper>{children}</SectionWrapper>
 			</div>
 		</div>
+	);
+}
+
+export function SectionTitle({
+	children,
+	className,
+}: {
+	children: ReactNode | ReactNode[];
+	className?: string;
+}) {
+	return (
+		<h2
+			className={cn(
+				"text-center font-headings text-2xl font-light leading-[1.125] text-primary md:text-4xl lg:text-5xl",
+				className,
+			)}
+		>
+			{children}
+		</h2>
 	);
 }

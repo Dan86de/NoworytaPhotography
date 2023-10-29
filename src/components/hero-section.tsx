@@ -65,12 +65,12 @@ export const HeroSection = () => {
 					</div>
 					<div className="mt-6 flex justify-center gap-6 md:justify-start">
 						<SocialLink
-							href="https://instagram.com"
+							href="https://www.instagram.com/knoworyta_photo/"
 							aria-label="Follow on Instagram"
 							icon={InstagramIcon}
 						/>
 						<SocialLink
-							href="https://linkedin.com"
+							href="https://www.linkedin.com/in/katarzyna-noworyta-a7719a1a3/"
 							aria-label="Follow on LinkedIn"
 							icon={LinkedInIcon}
 						/>
