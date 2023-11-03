@@ -1,6 +1,6 @@
 export default function AgbPage() {
 	return (
-		<div className="container mx-auto max-w-screen-2xl px-4 pt-12 text-lg leading-loose text-primary sm:px-6 xl:pt-40">
+		<div className="container mx-auto max-w-screen-2xl px-4 pt-16 text-lg leading-loose text-primary sm:px-6 md:pt-24 xl:pt-40">
 			{/*<button*/}
 			{/*  className="md:hidden items-center justify-center rounded-md bg-primary p-2 text-white border-2 border-primary hover:bg-white hover:text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary "*/}
 			{/*  onClick={() => router.back()}*/}
@@ -8,7 +8,7 @@ export default function AgbPage() {
 			{/*  Zurück*/}
 			{/*</button>*/}
 
-			<h1 className="font-headings mb-16 text-center text-4xl text-primary">
+			<h1 className="mb-16 text-center font-headings text-4xl text-primary">
 				Allgemeine Geschäftsbedingungen der Fotografin KatarzynaNoworyta
 			</h1>
 
@@ -19,7 +19,7 @@ export default function AgbPage() {
 				Kenntnis zu nehmen.
 			</p>
 			<ol className="list-decimal px-6">
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">Anwendungsbereich</li>
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">Anwendungsbereich</li>
 
 				<p>
 					Diese allgemeine Geschäftsbedingung gilt für alle der Fotografin Katarzyna Noworyta (im
@@ -27,7 +27,7 @@ export default function AgbPage() {
 					für alle Nutzungs- und Verwertungsarten im Sinne des Urheberrechts.{" "}
 				</p>
 
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">
 					Auftragsarbeiten; Immobilienfotografien
 				</li>
 
@@ -58,7 +58,7 @@ export default function AgbPage() {
 					</li>
 				</ol>
 
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">Urheberrecht</li>
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">Urheberrecht</li>
 
 				<ol className="list-decimal">
 					<li>
@@ -91,7 +91,7 @@ export default function AgbPage() {
 					</li>
 				</ol>
 
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">Vergütung</li>
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">Vergütung</li>
 
 				<ol className="list-decimal">
 					<li>
@@ -112,7 +112,7 @@ export default function AgbPage() {
 					</li>
 				</ol>
 
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">
 					Nebenpflichten des Auftraggebers
 				</li>
 
@@ -154,7 +154,7 @@ export default function AgbPage() {
 					</li>
 				</ol>
 
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">
 					Nebenpflichten der Fotografin
 				</li>
 
@@ -174,7 +174,7 @@ export default function AgbPage() {
 					</li>
 				</ol>
 
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">Haftung</li>
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">Haftung</li>
 
 				<ol className="list-decimal">
 					<li>
@@ -204,7 +204,7 @@ export default function AgbPage() {
 						Lokalitäten befinden.
 					</li>
 				</ol>
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">Datenschutz</li>
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">Datenschutz</li>
 
 				<ol className="list-decimal">
 					<li>
@@ -232,7 +232,7 @@ export default function AgbPage() {
 					</li>
 				</ol>
 
-				<li className="font-headings mt-8 text-4xl font-bold text-primary">Schlussbestimmungen</li>
+				<li className="mt-8 font-headings text-4xl font-bold text-primary">Schlussbestimmungen</li>
 
 				<ol className="list-decimal">
 					<li>

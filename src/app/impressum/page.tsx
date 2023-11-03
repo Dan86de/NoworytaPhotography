@@ -1,6 +1,6 @@
 export default function ImpressumPage() {
 	return (
-		<div className="container mx-auto max-w-screen-2xl px-4 pt-12 text-lg leading-loose text-primary sm:px-6 xl:pt-40">
+		<div className="container mx-auto max-w-screen-2xl px-4 pt-16 text-lg leading-loose text-primary sm:px-6 md:pt-24 xl:pt-40">
 			{/*<button*/}
 			{/*  className="hidden md:inline-flex items-center justify-center rounded-md bg-primary p-2 text-white border-2 border-primary hover:bg-white hover:text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary "*/}
 			{/*  onClick={() => router.back()}*/}
@@ -9,8 +9,8 @@ export default function ImpressumPage() {
 			{/*</button>*/}
 
 			<p className="text-right text-primary">Angaben gemäß § 5 TMG</p>
-			<h1 className="font-headings text-center text-4xl text-primary">Impressum</h1>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Kontakt:</h2>
+			<h1 className="text-center font-headings text-4xl text-primary">Impressum</h1>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Kontakt:</h2>
 
 			<strong>Immobilienfotograf Katarzyna Noworyta</strong>
 			<p>
@@ -30,8 +30,8 @@ export default function ImpressumPage() {
 				<strong>Internet:</strong> www.noworytaphotography.com
 			</p>
 
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Haftungsausschluss:</h2>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Haftung für Inhalte</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Haftungsausschluss:</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Haftung für Inhalte</h2>
 			<p>
 				Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
 				Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als
@@ -44,7 +44,7 @@ export default function ImpressumPage() {
 				ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden
 				von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
 			</p>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Haftung für Links</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Haftung für Links</h2>
 			<p>
 				Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen
 				Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
@@ -55,7 +55,7 @@ export default function ImpressumPage() {
 				konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
 				Rechtsverletzungen werden wir derartige Links umgehend entfernen.
 			</p>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Urheberrecht</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Urheberrecht</h2>
 			<p>
 				Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
 				deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der

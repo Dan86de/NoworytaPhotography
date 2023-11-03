@@ -29,7 +29,7 @@ const blocks = generateGridPattern(40, 10, 80);
 
 export const LatestWorkSection = () => {
 	return (
-		<div className="relative inset-0 overflow-hidden bg-background">
+		<div className="relative inset-0 overflow-hidden bg-background" id="portfolio">
 			<GridPattern
 				offsetX={0}
 				offsetY={0}

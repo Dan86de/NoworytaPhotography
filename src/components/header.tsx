@@ -13,26 +13,39 @@ import { Button } from "./ui/button";
 
 export type ILink = {
 	title: string;
-	url: UrlObject;
+	url: UrlObject | __next_route_internal_types__.RouteImpl<string>;
+	mobileOnly?: boolean;
 };
 
 export const links: ILink[] = [
 	{
-		title: "Referenzen",
+		title: "Home",
 		url: { pathname: "/" },
+		mobileOnly: true,
 	},
-	// {
-	// 	title: "Über mich",
-	// 	url: { pathname: "/about" },
-	// },
-	// {
-	// 	title: "Portfolio",
-	// 	url: { pathname: "/portfolio" },
-	// },
-	// {
-	// 	title: "Kontakt",
-	// 	url: { pathname: "/contact" },
-	// },
+	{
+		title: "Referenzen",
+		url: "/#references",
+	},
+	{
+		title: "Portfolio",
+		url: "/#portfolio",
+	},
+	{
+		title: "AGB",
+		url: { pathname: "/agb" },
+		mobileOnly: true,
+	},
+	{
+		title: "Impressum",
+		url: { pathname: "/impressum" },
+		mobileOnly: true,
+	},
+	{
+		title: "Datenschutz",
+		url: { pathname: "/datenschutz" },
+		mobileOnly: true,
+	},
 ];
 
 export const Header = () => {

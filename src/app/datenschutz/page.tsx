@@ -1,10 +1,10 @@
 export default function Datenschutz() {
 	return (
-		<div className="container mx-auto max-w-screen-2xl px-4 pt-12 text-lg leading-loose text-primary sm:px-6 xl:pt-40">
-			<h1 className="font-headings text-center text-4xl font-bold text-primary">
+		<div className="container mx-auto max-w-screen-2xl px-4 pt-16 text-lg leading-loose text-primary sm:px-6 md:pt-24 xl:pt-40">
+			<h1 className="text-center font-headings text-4xl font-bold text-primary">
 				Datenschutz Politik
 			</h1>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Begriffe</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Begriffe</h2>
 			<ol className="list-decimal px-6">
 				<li>
 					Für die Zwecke dieser Datenschutzerklärung werden die folgenden Begriffe verwendet: a)
@@ -13,7 +13,7 @@ export default function Datenschutz() {
 					Benutzer(in), die(der) unsere Website nutzt.
 				</li>
 			</ol>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Persönlichen Daten</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Persönlichen Daten</h2>
 			<ol className="list-decimal px-6">
 				<li>
 					Der Nutzer kann der Administratorin seine persönlichen Daten über die auf der Website
@@ -51,7 +51,7 @@ export default function Datenschutz() {
 					Administratorin einzureichen
 				</li>
 			</ol>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Cookies</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Cookies</h2>
 			<ol className="list-decimal px-6">
 				<li>
 					Die Administratorin verwendet Cookies, d.h. kleine Dateien mit Textinformationen, die im
@@ -77,7 +77,7 @@ export default function Datenschutz() {
 					Tools verwendet werden.
 				</li>
 			</ol>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Serverprotokollen</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Serverprotokollen</h2>
 			<ol className="list-decimal px-6">
 				<li>
 					Bei der Nutzung der Website werden Anfragen an den Server gesendet, auf dem die Website
@@ -100,7 +100,7 @@ export default function Datenschutz() {
 					Serversbberechtigt sind.
 				</li>
 			</ol>
-			<h2 className="font-headings mt-8 text-4xl font-bold text-primary">Data Update</h2>
+			<h2 className="mt-8 font-headings text-4xl font-bold text-primary">Data Update</h2>
 			<ol className="list-decimal px-6">
 				<li>
 					Bitte teilen Sie uns mit, wenn die uns übermittelten personenbezogenen Daten korrigiert

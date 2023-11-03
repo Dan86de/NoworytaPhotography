@@ -13,7 +13,7 @@ export const MobileMenu = ({ showMenu, links, closeMenu }: MobileMenuProps) => {
 		<>
 			{showMenu && (
 				<div
-					className={`absolute inset-0 bottom-0 left-0 right-0 top-14 h-screen w-screen items-center justify-center overflow-hidden bg-background shadow-md xl:hidden`}
+					className={`absolute inset-0 bottom-0 left-0 right-0 top-12 h-screen w-screen items-center justify-center overflow-hidden bg-background shadow-md md:pt-4 xl:hidden`}
 				>
 					<ul className="flex w-screen flex-col items-center space-y-2 divide-y">
 						{links.map((link, index) => (
