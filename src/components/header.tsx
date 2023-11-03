@@ -54,7 +54,7 @@ export const Header = () => {
 	const closeMenu = () => setShowMenu(false);
 	return (
 		<header className="fixed inset-x-0 z-10 flex w-screen flex-1 items-center bg-background shadow">
-			<div className="container relative flex items-center justify-between">
+			<div className="container relative flex items-center justify-between py-0.5">
 				<div>
 					<Link
 						href={"/"}
