@@ -95,9 +95,10 @@ export default function AgbPage() {
 
 				<ol className="list-decimal">
 					<li>
-						Für Auftragsarbeiten gilt die vereinbarte Vergütung. Sie richtet sich nach der Anzahl
-						der beauftragten Bilder und nach dem Aufwand des Fotoshootings. Erhöht sich im Laufe des
-						Auftrages die Anzahl der Lichtbilder, so fallen weitere Gebühren an.
+						Für Auftragsarbeiten gilt die vereinbarte Vergütung zuzüglich Umsatzsteuer. Sie richtet
+						sich nach der Anzahl der beauftragten Bilder und nach dem Aufwand des Fotoshootings.
+						Erhöht sich im Laufe des Auftrages die Anzahl der Lichtbilder, so fallen weitere
+						Gebühren an.
 					</li>
 					<li>
 						Begehrt der Auftraggeber das unbeschränkte und ausschließliche Recht an den
