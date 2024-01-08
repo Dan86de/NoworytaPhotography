@@ -3,7 +3,6 @@ import Image from "next/image";
 import dci_logo from "@/logos/DCI.webp";
 import efferz_logo from "@/logos/efferz_immo.webp";
 import luna_logo from "@/logos/luna.webp";
-import maxe_logo from "@/logos/maxeiner_immo.webp";
 import siepmann_logo from "@/logos/siepmann.webp";
 
 import { SectionTitle, SectionWrapperRounded } from "./section";
@@ -20,12 +19,6 @@ const items = [
 		title: "Home Staging Advanced Professional (DGHR)",
 		image: luna_logo,
 		body: "Aufgrund der vielen positiven Erfahrungen mochte ich hiermit uneingeschrankt eine Empfehlung fur Ihr Fotos aussprechen!",
-	},
-	{
-		name: "Stephan Maxeiner",
-		title: "Immobilien Makler",
-		image: maxe_logo,
-		body: "Wir empfehlen Frau Noworyta mit Ihren fotografischen Arbeiten uneingeschrankt weiter.",
 	},
 	{
 		name: "Susanne Schmitz",
